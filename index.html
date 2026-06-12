@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Политика конфиденциальности — MelioratorApp</title>
+    <meta name="robots" content="index,follow" />
+    <style>
+      :root {
+        --navy: #1b2a41;
+        --amber: #f59e0b;
+        --text: #1b2a41;
+        --muted: #6b7a8d;
+        --bg: #f0f2f5;
+        --card: #ffffff;
+        --border: rgba(27, 42, 65, 0.1);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter,
+          system-ui, sans-serif;
+        line-height: 1.6;
+        font-size: 16px;
+      }
+      header {
+        background: var(--navy);
+        color: #fff;
+        padding: 24px 16px;
+      }
+      .wrap {
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 0 16px;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .logo {
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+        background: var(--amber);
+        color: var(--navy);
+        font-weight: 800;
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 auto;
+      }
+      .brand h1 {
+        font-size: 18px;
+        margin: 0;
+        font-weight: 700;
+      }
+      .brand p {
+        margin: 2px 0 0;
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.6);
+      }
+      main {
+        padding: 28px 0 48px;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 24px;
+        margin-top: 20px;
+      }
+      h2 {
+        font-size: 16px;
+        margin: 0 0 12px;
+        color: var(--navy);
+      }
+      h2 .num {
+        color: var(--amber);
+        margin-right: 6px;
+      }
+      p,
+      li {
+        color: #2a3a52;
+      }
+      .muted {
+        color: var(--muted);
+        font-size: 14px;
+      }
+      a {
+        color: #2d6be4;
+      }
+      ul {
+        padding-left: 20px;
+        margin: 8px 0;
+      }
+      .meta {
+        font-size: 14px;
+      }
+      .meta b {
+        color: var(--navy);
+      }
+      .note {
+        background: #fffbeb;
+        border: 1px solid rgba(245, 158, 11, 0.4);
+        border-radius: 10px;
+        padding: 12px 14px;
+        font-size: 13px;
+        color: #7a5b00;
+      }
+      footer {
+        text-align: center;
+        padding: 24px 16px 40px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+      .effective {
+        font-size: 14px;
+        color: var(--muted);
+        margin-top: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap brand">
+        <div class="logo">M</div>
+        <div>
+          <h1>MelioratorApp</h1>
+          <p>Политика конфиденциальности</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <div class="card meta">
+        <p class="effective"><b>Дата вступления в силу:</b> [дата]</p>
+        <p>
+          <b>Оператор данных:</b> [полное юридическое название компании], БИН
+          [____], адрес: [____]
+        </p>
+        <p>
+          <b>Контакт по вопросам конфиденциальности:</b>
+          <a href="mailto:[email]">[email]</a>
+        </p>
+      </div>
+
+      <div class="card">
+        <h2><span class="num">1.</span>Общие положения</h2>
+        <p>
+          «MelioratorApp» (далее — Приложение) — это корпоративное служебное
+          приложение для сотрудников компании [название]. Доступ предоставляется
+          только по учётным записям, выдаваемым работодателем. Приложение не
+          предназначено для широкой публики и для лиц младше 13 лет.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2><span class="num">2.</span>Какие данные обрабатываются</h2>
+        <ul>
+          <li>
+            <b>Учётные данные.</b> Логин и пароль, вводимые при входе. Пароль
+            передаётся на сервер только для проверки и в Приложении не
+            сохраняется.
+          </li>
+          <li>
+            <b>Данные профиля сотрудника</b> (получаемые с сервера): ФИО,
+            должность/роль, права доступа, привязка к объектам/контрагенту.
+          </li>
+          <li>
+            <b>Токены авторизации</b> (JWT access/refresh) — хранятся локально
+            на устройстве в зашифрованном хранилище ОС (Android Keystore /
+            EncryptedSharedPreferences) для поддержания сессии.
+          </li>
+          <li>
+            <b>Рабочие данные компании</b>, отображаемые в Приложении (остатки
+            ТМЦ, заявки, объекты, акты, движения и т.п.), обрабатываются на
+            серверах компании.
+          </li>
+        </ul>
+        <p>
+          Приложение <b>не собирает</b>: геолокацию, контакты, доступ к
+          камере/микрофону, фотографии, рекламные идентификаторы. Не
+          используются сторонняя аналитика и реклама.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2><span class="num">3.</span>Цели обработки</h2>
+        <ul>
+          <li>аутентификация и авторизация пользователя;</li>
+          <li>
+            предоставление функций CRM (учёт склада, заявки, объекты и др.) в
+            рамках трудовых обязанностей сотрудника.
+          </li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2><span class="num">4.</span>Разрешения устройства</h2>
+        <p>
+          Приложение запрашивает только доступ в <b>Интернет</b> (для связи с
+          сервером). Иных разрешений не запрашивается.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2><span class="num">5.</span>Передача данных третьим лицам</h2>
+        <p>
+          Данные не продаются и не передаются третьим лицам в рекламных или
+          маркетинговых целях. Обмен данными происходит только между Приложением
+          и серверами компании (<b>melioapp.kz</b>). Может использоваться
+          инфраструктура хостинга/связи, действующая по поручению компании и от
+          её имени.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2><span class="num">6.</span>Хранение и защита</h2>
+        <ul>
+          <li>Передача данных — по защищённому соединению HTTPS (TLS).</li>
+          <li>
+            Токены авторизации — в зашифрованном хранилище операционной системы.
+          </li>
+          <li>Доступ к функциям и данным ограничен ролями и правами (RBAC).</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2><span class="num">7.</span>Срок хранения и удаление</h2>
+        <ul>
+          <li>
+            Данные сотрудника обрабатываются в течение срока действия его
+            учётной записи; создание, блокировка и удаление учётной записи
+            выполняются администратором компании.
+          </li>
+          <li>
+            Локальные токены удаляются при выходе из Приложения и при завершении
+            сессии.
+          </li>
+          <li>
+            Запросы на доступ/удаление персональных данных направляйте на
+            <a href="mailto:[email]">[email]</a>.
+          </li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2><span class="num">8.</span>Права пользователей</h2>
+        <p>
+          В соответствии с законодательством Республики Казахстан о персональных
+          данных пользователь имеет право на доступ к своим данным, их
+          исправление, блокирование и удаление. Обращения:
+          <a href="mailto:[email]">[email]</a>.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2><span class="num">9.</span>Данные детей</h2>
+        <p>
+          Приложение не предназначено для лиц младше 13 лет и сознательно не
+          собирает их персональные данные.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2><span class="num">10.</span>Изменения политики</h2>
+        <p>
+          Актуальная версия публикуется на этой странице. При изменениях
+          обновляется дата вступления в силу.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2><span class="num">11.</span>Контакты</h2>
+        <p>
+          [Полное название компании], email:
+          <a href="mailto:[email]">[email]</a>, адрес: [____].
+        </p>
+      </div>
+
+      <div class="note">
+        Перед публикацией замените все поля в квадратных скобках
+        <code>[…]</code> на реальные данные и убедитесь, что текст совпадает с
+        формой Data Safety в Google Play.
+      </div>
+    </main>
+
+    <footer>
+      © <span id="y"></span> MelioratorApp. Все права защищены.
+      <script>
+        document.getElementById("y").textContent = new Date().getFullYear();
+      </script>
+    </footer>
+  </body>
+</html>
